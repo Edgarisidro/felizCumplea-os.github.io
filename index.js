@@ -1,7 +1,7 @@
 const yesBtn = document.querySelector('#yesBtn');
 
 yesBtn.addEventListener('click',function () {
-    alert('ya dijiste que si mañana te espero baby')
+    alert('te amo, me gustas mucho <3')
 });
 
 const noBtn = document.querySelector('#noBtn');
