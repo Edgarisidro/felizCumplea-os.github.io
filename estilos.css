@@ -33,8 +33,16 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 400px;
+    width: 50vw; /* Tamaño relativo: 50% del ancho de la pantalla */
+    max-width: 400px; /* Tamaño máximo para evitar que sea demasiado grande en pantallas grandes */
     border-radius: 15px;
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
+}
+
+/* Media query para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+    .modal-image {
+        width: 70vw; /* Ajuste al 70% del ancho en móviles para mejor visibilidad */
+    }
 }
