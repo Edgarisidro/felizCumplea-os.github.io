@@ -1,7 +1,7 @@
 const yesBtn = document.querySelector('#yesBtn');
 
 yesBtn.addEventListener('click', function () {
-    alert('Feliz cumpleaños, pásatela bonito <3');
+    alert('Feliz cumpleaños, pásatela bonito se que no es mucho pero pues ando pobre <3');
 
     // Usar setTimeout para esperar un momento después de la alerta
     setTimeout(() => {
