@@ -7,8 +7,11 @@
     width: 100vw;
     height: 100vh;
     text-align: center;
+    
 }
-
+body {
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
 p {
     font-size: xx-large;
     padding: 15%;
@@ -17,15 +20,15 @@ p {
 button {
     font-size: xx-large;
     padding: 0.75em;
+    margin: 10px; /* Agregar un pequeño margen entre botones */
 }
 
-#yesBtn {
-    transform: translate(-100%, 0);
+#yesBtn, #noBtn {
+    position: relative;
+    margin-top: 20px; /* Separación de los botones del texto */
 }
 
-#noBtn {
-    position: absolute;
-}
+
 
 /* Estilo para la imagen modal */
 .modal-image {
@@ -33,16 +36,18 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50vw; /* Tamaño relativo: 50% del ancho de la pantalla */
-    max-width: 400px; /* Tamaño máximo para evitar que sea demasiado grande en pantallas grandes */
+    width: 50vw; /* Relativo al tamaño de la pantalla */
+    max-width: 400px; /* Limita el tamaño máximo */
+    height: auto; /* Mantiene la proporción de la imagen */
     border-radius: 15px;
     z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Media query para pantallas pequeñas (móviles) */
+/* Media query para pantallas pequeñas */
 @media (max-width: 600px) {
     .modal-image {
-        width: 70vw; /* Ajuste al 70% del ancho en móviles para mejor visibilidad */
+        width: 70vw; /* Se ajusta al 70% del ancho en móviles */
+        max-width: 300px; /* Limita el tamaño máximo en pantallas pequeñas */
     }
 }
