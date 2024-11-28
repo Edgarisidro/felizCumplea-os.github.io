@@ -1,13 +1,13 @@
 const yesBtn = document.querySelector('#yesBtn');
 
 yesBtn.addEventListener('click', function () {
-    alert('Feliz cumpleaños, pásatela bonito ojala te la pases muy lindo hoy en tu dia, se que no es mucho pero pues ando pobre <3');
+    alert('Felices 20, pásatela bonito ojala te la pases muy lindo hoy en tu dia, sabes que eres mi personita especial y consentida, la mejor psicologa, hermos, preciosa, aplicada y ya dije que estas muy linda? pues lo repito mujer preciosa <3');
 
     // Usar setTimeout para esperar un momento después de la alerta
     setTimeout(() => {
         // Crear un nuevo elemento de imagen
         const img = document.createElement('img');
-        img.src = 'https://i.pinimg.com/736x/ff/89/0c/ff890c2cd6b6b717a25260f7a9ba29d2.jpg';
+        img.src = 'https://i.pinimg.com/736x/18/64/7e/18647e1a2f04c9e54a786f32584eaf65.jpg';
         img.alt = 'Imagen de feliz cumpleaños';
         img.classList.add('modal-image'); // Agrega la clase para el estilo modal
 
