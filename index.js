@@ -7,7 +7,7 @@ yesBtn.addEventListener('click', function () {
     setTimeout(() => {
         // Crear un nuevo elemento de imagen
         const img = document.createElement('img');
-        img.src = 'https://i.pinimg.com/736x/18/64/7e/18647e1a2f04c9e54a786f32584eaf65.jpg';
+        img.src = 'https://i.pinimg.com/736x/9c/29/e3/9c29e3d1420367776f95a521d47cf6be.jpg';
         img.alt = 'Imagen de feliz cumpleaños';
         img.classList.add('modal-image'); // Agrega la clase para el estilo modal
 
